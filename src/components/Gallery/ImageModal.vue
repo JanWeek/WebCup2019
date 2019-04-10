@@ -73,7 +73,7 @@ export default {
 
     subStrLink: function() {
       if (this.image.name.length > 50) {
-        return this.image.name.substr(0, 50) + "..."
+        return this.image.name.substr(0, 25) + "..."
       }
         else return this.image.name
     }

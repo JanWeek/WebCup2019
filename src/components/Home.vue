@@ -178,6 +178,8 @@ export default {
 
     showQnty(limit) {
       this.show = limit
+      this.skip = 0,
+      this.currentPage = 1,
       this.getImages(this.show, this.skip)
     },
 

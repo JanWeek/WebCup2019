@@ -308,13 +308,13 @@ header {
 }
 
 .btn__next {
-    top: 50%;
+    top: calc(50% - 30px);
     right: 20px;
     font-size: 40px;
 }
 
 .btn__prev {
-    top: 50%;
+    top: calc(50% - 30px);
     left: 20px;
     font-size: 40px;
 }
@@ -330,6 +330,17 @@ header {
     vertical-align: -0.15em;
     fill: currentColor;
     overflow: hidden;
+}
+
+@include media-breakpoint-down(sm) {
+    .modal__header {
+        font-size: 0.85rem;
+        flex-direction: column;
+    }
+
+    .btn__close {
+        top: 50px;
+    }
 }
 
 @include media-breakpoint-up(sm) {

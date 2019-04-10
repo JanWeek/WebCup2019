@@ -22,4 +22,4 @@
 
 `npm install`,
 затем запустить запустить скрипт
-`npm run productuin`
+`npm run production`

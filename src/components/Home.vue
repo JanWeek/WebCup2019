@@ -184,10 +184,11 @@ export default {
     },
 
     goToPage(index, event) {
+      console.log(event)
       if (typeof event === "undefined") {
         event = false
       }
-      if (event && event.originalTarget.classList[1] == "active") {
+      if (event && event.target.classList[1] == "active") {
         return false
       }
       this.currentPage = index

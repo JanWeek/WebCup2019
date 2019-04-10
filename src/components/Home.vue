@@ -184,7 +184,6 @@ export default {
     },
 
     goToPage(index, event) {
-      console.log(event)
       if (typeof event === "undefined") {
         event = false
       }

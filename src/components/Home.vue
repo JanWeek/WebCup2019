@@ -190,7 +190,6 @@ export default {
       if (event && event.originalTarget.classList[1] == "active") {
         return false
       }
-      console.log(index)
       this.currentPage = index
       this.skip = this.imagesLimit * (index - 1)
       this.getImages(this.show, this.skip)
